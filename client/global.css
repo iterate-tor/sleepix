@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * SleepFix.ai Design System
+   * Calming color palette with lavender accents and sleep-friendly blues
+   */
+  :root {
+    /* Base colors - calming whites and soft grays */
+    --background: 210 20% 98%;
+    --foreground: 215 16% 22%;
+
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 16% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 16% 22%;
+
+    /* Primary - Deep calming blue */
+    --primary: 220 39% 25%;
+    --primary-foreground: 210 20% 98%;
+
+    /* Secondary - Soft blue-gray */
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 220 39% 25%;
+
+    /* Muted colors */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 46%;
+
+    /* Accent - Lavender */
+    --accent: 270 50% 85%;
+    --accent-foreground: 270 25% 25%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    /* Borders and inputs */
+    --border: 220 20% 88%;
+    --input: 220 20% 92%;
+    --ring: 270 50% 60%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar colors */
+    --sidebar-background: 220 25% 96%;
+    --sidebar-foreground: 215 16% 22%;
+    --sidebar-primary: 220 39% 25%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 270 50% 90%;
+    --sidebar-accent-foreground: 270 25% 25%;
+    --sidebar-border: 220 20% 88%;
+    --sidebar-ring: 270 50% 60%;
+
+    /* SleepFix.ai brand colors - Lavender palette */
+    --lavender-50: 270 100% 98%;
+    --lavender-100: 270 85% 95%;
+    --lavender-200: 270 75% 88%;
+    --lavender-300: 270 65% 78%;
+    --lavender-400: 270 55% 68%;
+    --lavender-500: 270 50% 60%;
+    --lavender-600: 270 45% 50%;
+    --lavender-700: 270 40% 40%;
+    --lavender-800: 270 35% 30%;
+    --lavender-900: 270 30% 20%;
+
+    /* Sleep-themed blue palette */
+    --sleep-blue-50: 210 100% 98%;
+    --sleep-blue-100: 210 85% 95%;
+    --sleep-blue-200: 210 75% 88%;
+    --sleep-blue-300: 215 65% 78%;
+    --sleep-blue-400: 220 55% 68%;
+    --sleep-blue-500: 220 50% 55%;
+    --sleep-blue-600: 220 45% 45%;
+    --sleep-blue-700: 220 40% 35%;
+    --sleep-blue-800: 220 35% 25%;
+    --sleep-blue-900: 220 30% 15%;
+  }
+
+  .dark {
+    /* Dark mode - Deep sleep-friendly colors */
+    --background: 220 30% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 270 50% 70%;
+    --primary-foreground: 220 30% 8%;
+
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 25% 15%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 270 45% 60%;
+    --accent-foreground: 220 30% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 20% 92%;
+
+    --border: 220 25% 18%;
+    --input: 220 25% 15%;
+    --ring: 270 45% 60%;
+
+    --sidebar-background: 220 30% 10%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 270 50% 70%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 270 35% 25%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 25% 18%;
+    --sidebar-ring: 270 45% 60%;
+
+    /* Dark mode lavender */
+    --lavender-50: 270 30% 15%;
+    --lavender-100: 270 35% 20%;
+    --lavender-200: 270 40% 25%;
+    --lavender-300: 270 45% 35%;
+    --lavender-400: 270 50% 45%;
+    --lavender-500: 270 50% 60%;
+    --lavender-600: 270 55% 70%;
+    --lavender-700: 270 60% 78%;
+    --lavender-800: 270 65% 85%;
+    --lavender-900: 270 70% 90%;
+
+    /* Dark mode sleep blues */
+    --sleep-blue-50: 220 30% 15%;
+    --sleep-blue-100: 220 35% 20%;
+    --sleep-blue-200: 220 40% 25%;
+    --sleep-blue-300: 220 45% 35%;
+    --sleep-blue-400: 220 50% 45%;
+    --sleep-blue-500: 220 55% 55%;
+    --sleep-blue-600: 220 60% 65%;
+    --sleep-blue-700: 220 65% 75%;
+    --sleep-blue-800: 220 70% 82%;
+    --sleep-blue-900: 220 75% 88%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
